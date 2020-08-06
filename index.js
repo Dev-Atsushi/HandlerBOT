@@ -9,7 +9,7 @@ app.get("/", (request, response) => {
 app.listen(process.env.PORT)
 setInterval(() => {
     http.get(`http://${process.env.PROJECT_DOMAIN}.repl.co/`);
-}, 280000); // código que deixa o bot online
+}, 280000);
 
 const Discord = require("discord.js");
 const db = require("quick.db")
