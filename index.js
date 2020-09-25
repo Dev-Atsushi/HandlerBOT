@@ -12,7 +12,6 @@ setInterval(() => {
 }, 280000);
 
 const Discord = require("discord.js");
-const db = require("quick.db")
 const client = new Discord.Client();
 const config = require("./config.json");
 let fs = require("fs")
@@ -41,15 +40,7 @@ client.on("message", async message => {
     const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     const cmd = client.commands.get(command) || client.commands.get(client.aliases.get(command));
-    if(!cmd) {
-let embed = new Discord.MessageEmbed()
-        .setColor(0x808080)
-        .setTitle('`\📛\` Comando Inválido')
-        .setThumbnail(client.user.displayAvatarURL())
-        .setFooter(`Code© Todos os Direitos Reservados`, message.author.displayAvatarURL({ dynamic: true }))
-
-        return message.channel.send(embed)
-}
+    if(!cmd)
 
     cmd.run(client, message, args, db);
 })
@@ -70,4 +61,4 @@ client.on("ready", () => {
 console.log("Online Bot!")
 });
 
-client.login(process.env.TOKEN);
+client.login("TOKEN");
