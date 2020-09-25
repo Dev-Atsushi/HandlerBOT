@@ -42,22 +42,10 @@ client.on("message", async message => {
     const cmd = client.commands.get(command) || client.commands.get(client.aliases.get(command));
     if(!cmd)
 
-    cmd.run(client, message, args, db);
+    cmd.run(client, message, args);
 })
 
 client.on("ready", () => {
-  let activities = [
-      `1`,
-      `2`,
-      `3`,
-      `4`,
-      `5`,
-      `6`
-    ],
-    i = 0;
-  setInterval( () => client.user.setActivity(`${activities[i++ % activities.length]}`, {
-        type: "WATCHING"
-      }), 15000); //WATCHING, LISTENING, PLAYING, STREAMING 
 console.log("Online Bot!")
 });
 
