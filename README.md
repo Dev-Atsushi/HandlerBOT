@@ -1,21 +1,12 @@
 # 🌊 | Handler Bot
 Handler para seu primeiro bot!
 # 🥥 | Como configurar?
-- .env
-```js
-TOKEN=SEUTOKEN
-```
-Coloque seu token em "SEUTOKEN"
-- index.js
-```js
-client.login("TOKEN");
-```
 Coloque seu token em "TOKEN"
-- config.json
-```json
-{
-"prefix": "SEUPREFIXO",
-"token:": "SEUTOKEN"
+- config.js
+```js
+module.exports = {
+  prefix: "SEUPREFIXO",
+  token: "SEUTOKEN"
 }
 ```
 Coloque seu prefixo em "SEUPREFIXO"
@@ -35,6 +26,6 @@ name: "nome do comando"
 }
 ```
 # 🐦 | Dúvidas ou contato?
-- Fale pelo discord com ‟・Atsushi❞#0012
+- Fale pelo discord com Atsushi❞#0012
 # 🎓 | Créditos
-- Dê o crédito ao ‟・Atsushi❞#0012 em algum comando
+- Dê o crédito ao Atsushi❞#0012 em algum comando
