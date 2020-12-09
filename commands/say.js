@@ -4,5 +4,5 @@ module.exports.run = async (client, message, args) => {
     message.channel.send(falar)
 }
 module.exports.info = {
-  name: "say",
+  name: "say"
 }
