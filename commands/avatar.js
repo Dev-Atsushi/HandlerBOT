@@ -7,7 +7,7 @@ module.exports.run = async (client, message, args) => {
     .setColor("BLACK") // Cor de sua preferência
     .setTitle("Baixe [Aqui]("+user.displayAvatarURL()+") o Avatar de "+user.username+"")
     .setImage(user.displayAvatarURL({ size: 512, dynamic: true }).replace(".webp", ".png"))
-  message.chnel.send(embed)
+  message.channel.send(embed)
 
 }
 module.exports.info = {
