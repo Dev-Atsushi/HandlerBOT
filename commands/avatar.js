@@ -5,7 +5,7 @@ module.exports.run = async (client, message, args) => {
 
   const embed = new Discord.MessageEmbed()
     .setColor("BLACK") // Cor de sua preferência
-    .setTitle("Baixe [Aqui]("+user.displayAvatarURL()+") o Avatar de "+user.username}+"")
+    .setTitle("Baixe [Aqui]("+user.displayAvatarURL()+") o Avatar de "+user.username+"")
     .setImage(user.displayAvatarURL({ size: 512, dynamic: true }).replace(".webp", ".png"))
   message.chnel.send(embed)
 
