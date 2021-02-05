@@ -26,6 +26,4 @@ name: "nome do comando"
 }
 ```
 # 🐦 | Dúvidas ou contato?
-- Fale pelo discord com Atsushi❞#0012
-# 🎓 | Créditos
-- Dê o crédito ao Atsushi❞#0012 em algum comando
+- Fale pelo discord com Atsushi❞#5239
