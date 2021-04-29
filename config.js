@@ -1,4 +1,4 @@
 module.exports = {
-  prefix: "SEUPREFIXO",
-  token: "SEUTOKEN"
-}
+  prefix: "YOUR_PREFIX",
+  token: "YOUR_TOKEN"
+};
