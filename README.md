@@ -1,29 +1,28 @@
 # 🌊 | Handler Bot
-Handler para seu primeiro bot!
-# 🥥 | Como configurar?
-Coloque seu token em "TOKEN"
+Handler for your first bot!
+# 🥥 | How to configure?
+Put your token in "TOKEN"
 - config.js
 ```js
 module.exports = {
-  prefix: "SEUPREFIXO",
-  token: "SEUTOKEN"
+  prefix: "YOUR_PREFIX",
+  token: "YOUR_TOKEN"
 }
 ```
-Coloque seu prefixo em "SEUPREFIXO"
-COloque seu token em "SEUTOKEN"
-# ⭐️ | Como fazer comandos?
-- Olhe o exemplo de commands/teste.js
+Put your prefix in "YOUR_PREFIXO"
+Put your token in "YOUR_TOKEN"
+# ⭐️ | How to make commands?
+- Look at the commands/test.js example
 Você pode fazer como este exemplo:
 ```js
-const Discord = require("discord.js")
+const Discord = require("discord.js");
+
 module.exports.run = async (client, message, args) => {
-
-AQUI O CODE
-
-}
+  Here the code
+};
 module.exports.info = {
-name: "nome do comando"
-}
+name: "Command_Name"
+};
 ```
-# 🐦 | Dúvidas ou contato?
-- Fale pelo discord com Atsushi❞#5239
+# 🐦 | Questions or contact?
+- Speak for discord with Atsushi❞#5239
